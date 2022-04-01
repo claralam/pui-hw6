@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Carnegie Mellon University Tartan Testing">
+    
+    <title>CMU Tartan Testing</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/buttons.css" />
+
+    <!-- JS Files -->
+    <script defer src="js/main.js"></script>
+    
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/scottyvaccinated.png" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="top_row">
+        <header>
+            <a href="loggedin-home.html"><img src="images/scottyvaccinated.png" class="logo" alt="CMU mascot Scotty wearing a mask"></a>
+            <h1>CMU Tartan Testing</h1>
+        </header>
+
+        <!-- Nav bar -->
+        <nav>
+            <a href="loggedin-home.html" class="button">HOME</a>
+            <a href="" class="button">SCHEDULE</a>
+            <a href="" class="button">RESULTS</a>
+            <a href="" class="button">CLARA</a>
+            <a href="index.html" class="button">LOGOUT</a>
+            <!-- <a href="profile.html" class="button"><img src="images/pfp.png" class="pfp">Clara</a> -->
+        </nav>
+
+        <div id="content">
+            <h2>COVID-19 Test Results</h2>
+            <table id="covid-results">
+                <tr>
+                    <th>Read</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><img class="checkmark" src="images/check.png" alt="checkmark"></td>
+                    <td class="date-info">Wednesday, November 17, 2021</td>
+                    <td class="button-col"><button data-modal-target="#modal" class="button popup-button">View</button></td>
+                </tr>
+                <tr>
+                    <td><img class="checkmark" src="images/check.png" alt="checkmark"></td>
+                    <td class="date-info">Thursday, October 14, 2021</td>
+                    <td class="button-col"><button data-modal-target="#modal" class="button popup-button">View</button></td>
+                </tr>
+                <tr>
+                    <td><img class="checkmark" src="images/check.png" alt="checkmark"></td>
+                    <td class="date-info">Thursday, September 16, 2021</td>
+                    <td class="button-col"> <button data-modal-target="#modal" class="button popup-button">View</button></td>
+                </tr>
+                <tr>
+                    <td><img class="checkmark" src="images/check.png" alt="checkmark"></td>
+                    <td class="date-info">Thursday, August 26, 2021</td>
+                    <td class="button-col"><button data-modal-target="#modal" class="button popup-button">View</button></td>
+                </tr>
+                <tr>
+                    <td><img class="checkmark" src="images/check.png" alt="checkmark"></td>
+                    <td class="date-info">Wednesday, May 12, 2021</td>
+                    <td class="button-col"><button data-modal-target="#modal" class="button popup-button">View</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-body">
+                <h1>COVID-19 Test Result</h1>
+                <p><strong>Result:</strong> Negative/Not Detected</p>
+                <p><strong>Date:</strong> Wednesday, November 17, 2021</p>
+                <p><strong>Time:</strong> 10:05 AM</p>
+                <p><strong>Location:</strong> TCS Hall (Tata Consultancy Services</p>
+                <p>
+                    Other written details for the test result. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                </p>
+                <button data-close-button class="button" id="popup-back-button">Close</button>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+</body>
+</html>

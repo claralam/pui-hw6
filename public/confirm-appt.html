@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Carnegie Mellon University Tartan Testing">
+    
+    <title>CMU Tartan Testing</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/buttons.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/scottyvaccinated.png" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="top_row">
+        <header>
+            <a href="loggedin-home.html"><img src="images/scottyvaccinated.png" class="logo" alt="CMU mascot Scotty wearing a mask"></a>
+            <h1>CMU Tartan Testing</h1>
+        </header>
+
+        <!-- Nav bar -->
+        <nav>
+            <a href="loggedin-home.html" class="button">HOME</a>
+            <a href="" class="button selected">SCHEDULE</a>
+            <a href="" class="button">RESULTS</a>
+            <a href="" class="button">CLARA</a>
+            <a href="index.html" class="button">LOGOUT</a>
+            <!-- <a href="profile.html" class="button"><img src="images/pfp.png" class="pfp">Clara</a> -->
+        </nav>
+
+        <div id="content">
+            <!-- Page for user to go over appointment details and confirm -->
+            <h2>Confirm Appointment Details</h2>
+            <div id="left-half">
+                <p><strong>Appointment:</strong> <span class="appt-info-left">Tartan Testing (Asymptomatic COVID-19 Testing)</span></p><br>
+                <p><strong>Date:</strong> <span class="appt-info-left">Tuesday, February 1, 2022</span></p><br>
+                <p><strong>Time:</strong> <span class="appt-info-left">10:05 AM</span></p><br>
+                <p><strong>Location:</strong> <span class="appt-info-left">TCS Hall (Tata Consultancy Services</span></p><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.377367465818!2d-79.94954334903956!3d40.4447839617555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f319d3870ad1%3A0x79d45fd59091764a!2sTCS%20Hall!5e0!3m2!1sen!2sus!4v1646093544694!5m2!1sen!2sus" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="right-half-centered">
+                <!-- QR code that user will need when they go to appt -->
+                <p>Please present this QR code at your appointment</p><br>
+                <img src="images/figma_qr.png" id="qr-code" alt="QR code for appointment">
+            </div>
+
+            <!-- Button -->
+            <div id="confirm-back-buttons">
+                <a href="appt-confirmation.html" id="confirm-button" class="button">CONFIRM</a>
+                <a href="appt-time.html" id="back-button" class="button">BACK</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

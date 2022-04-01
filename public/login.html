@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Carnegie Mellon University Tartan Testing">
+    
+    <title>CMU Tartan Testing</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/buttons.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/scottyvaccinated.png" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="top_row">
+        <header>
+            <a href="loggedin-home.html"><img src="images/scottyvaccinated.png" class="logo" alt="CMU mascot Scotty wearing a mask"></a>
+            <h1>CMU Tartan Testing</h1>
+        </header>
+
+        <!-- Nav bar -->
+        <nav>
+            <a href="index.html" class="button">HOME</a>
+            <a href="about.html" class="button">ABOUT</a>
+            <a href="resources.html" class="button">RESOURCES</a>
+            <a href="login.html" class="button login-button">LOGIN</a>
+        </nav>
+
+        <!-- Login -->
+        <div id="content">
+            <h2>Login</h2>
+            <h3>Get tested and vaccinated for COVID-19!</h3>
+            <form id="login-form">
+                <label for="andrewid">Andrew ID:</label>
+                <input type="text" id="andrewid" name="andrewid" placeholder="andrewid" size="20" maxlength="250" required><br/><br/>
+                
+                <label for="pswd">Password:</label>
+                <input type="password" id="pswd" name="pswd" placeholder="password" size="20" maxlength="30"><br/><br/>
+            </form>
+            <!-- Forgot password and login button -->
+            <div id="login-support-items">
+                <a href="">Forgot password?</a><br>
+                <a href="loggedin-home.html" class="button small-login-button">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

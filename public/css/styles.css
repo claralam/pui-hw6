@@ -1,0 +1,357 @@
+/* Font */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    line-height: 1.5em;
+    color: #000000;
+    margin: 0px;
+    position: relative;
+}
+
+/* Nav Bar for pre-login */
+#top_row {
+    height: 50px;
+    padding: .5em .5em 3em .5em;
+    border-bottom: 1px solid #5574B1;
+    align-content: center;
+    background: #5574B1;
+}
+
+.logo {
+    width: auto;
+    height: 4em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* .pfp {
+    width: auto;
+    height: 2em;
+    padding: 0em 0.2em;
+    color-overlay: #FFFFFF;
+} */
+
+#top_row header h1{
+    font-size: 1.75em;
+    font-weight: 500;
+    width: 250px;
+    height: auto;
+    color: #FFFFFF;
+    line-height: 1em;
+    text-decoration: none;
+    float: left;
+}
+
+#top_row nav {
+    float: right;
+    margin: 35px 20px;
+    text-transform: capitalize;
+}
+
+#top_row nav a.selected {
+    text-decoration: underline;
+}
+
+#top_row nav a.selected:hover {
+    background: #f6f6f6;
+    color: #bbbbbb;
+}
+
+#top_row nav a:hover {
+    background: #f6f6f6;
+    color: #5574B1;
+}
+
+#centered-page {
+    text-align: center;
+    margin: 25%;
+}
+
+#content {
+    margin: 125px 60px 0px;
+}
+
+/* Log In Page */
+
+#login-form {
+    float: left;
+    text-align: right;
+    clear: right;
+}
+
+#login-form label {
+    font-weight: 500;
+    font-size: 1.15em;
+    margin: 10px;
+}
+
+#login-form input {
+    background-color: #E1EAFD;
+    border: 0px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#login-form input::placeholder {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#login-support-items {
+    clear: left;
+    float: left;
+    text-align: right;
+    margin: 0px 19.5%;
+}
+
+#login-support-items a {
+    text-decoration: none;
+    line-height: 3em;
+}
+
+/* Logged In Home Page */
+
+#sidebar {
+    float: left;
+    width: 20%
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+#upcoming-summary {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    width: 100%
+}
+
+#upcoming-summary td {
+    float: left;
+}
+
+#main-content {
+    width: 80%;
+    float: right;
+    text-align: center;
+}
+
+#main-content h2 {
+    font-size: 3em;
+    height: auto;
+    line-height: 1em;
+}
+
+/* Selecting Appt Type */
+
+#choose-appt-type input[type="radio"] {
+    margin: 20px 15px;
+    transform: scale(1.75); 
+}
+
+#choose-appt-type label {
+    font-size: 20px;
+}
+
+/* Selecting Appt Date &Time */
+
+#left-half {
+    width: 40%;
+    float: left;
+    line-height: 0.5em;
+    font-size: 1em;
+}
+
+#date-selection {
+    align-content: center;
+    text-align: center;
+    background-color: #E1EAFD;
+    padding: 5px;
+    line-height: 0.8em;
+    border-radius: 20px;
+}
+
+#date-selection img, #date-selection p {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#choose-appt-date {
+    margin: 10px;
+    width: 150%
+  }
+  
+#choose-appt-date input[type="radio"] {
+    opacity: 0;
+    width: 0;
+}
+
+#choose-appt-date label {
+    position: relative;
+    left: -165px;
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px;
+    margin: 0px 10px;
+    text-align: center;
+    line-height: 1em;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+#choose-appt-date label:hover {
+    border: 2px solid #79A5FC;
+}
+
+#choose-appt-date input[type="radio"]:checked + label {
+    background-color: #79A5FC;
+}
+
+#choose-appt-time {
+    position: relative;
+    display: inline-block;
+}
+
+#choose-appt-time input[type="radio"] {
+    margin: 20px 15px;
+    transform: scale(1.5);
+}
+
+#time-group1 {
+    float: left;
+    margin-left: 50px;
+}
+
+#time-group2 {
+    margin-left: 225px;
+    float: right;
+}
+
+#right-half {
+    width: 55%;
+    float: right;
+    font-size: 1.25em;
+    line-height: 1.2em;
+}
+
+#right-half p {
+    margin: 0px;
+}
+
+.appt-info-right {
+    position: absolute;
+    left: 1000px;
+    width: 500px;
+    text-align: left;
+}
+
+iframe {
+    margin: 20px 0px;
+}
+
+/* Confirm Appt Page */
+
+#qr-code {
+    width: 30%; 
+}
+
+#right-half-centered {
+    width: 55%;
+    float: right;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+#right-half-centered p {
+    margin: 0px;
+    width: 300px;
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+}
+
+.appt-info-left {
+    position: absolute;
+    left: 200px;
+    width: 500px;
+    text-align: left;
+}
+
+/* Past COVID Results Page */
+
+.checkmark {
+    width: 20px;
+}
+
+#covid-results {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 5% 10%;
+}
+  
+#covid-results td, #covid-results th {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+  
+#covid-results tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#button-col {
+    display: flex;
+    justify-content: right;
+}
+
+/* Source: https://www.youtube.com/watch?v=MBaw_6cPmAw&ab_channel=WebDevSimplified */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 50px;
+    z-index: 10;
+    background-color: white;
+    width: 75%;
+    height: 60%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-body {
+    padding: 20px 20px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}

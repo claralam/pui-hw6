@@ -1,0 +1,84 @@
+
+/* Basic button */
+.button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Large sized */
+.large-button {
+    font-size: 25px;
+    padding: 15px;
+    line-height: 3.5em;
+    color: #000000;
+    background-color: #E1EAFD;
+}
+
+/* Medium sized */
+.medium-button {
+    font-size: 30px;
+}
+
+.small-login-button {
+    background-color: #79A5FC;
+    font-size: 15px;
+}
+
+/* Login button */
+.login-button {
+    background-color: #79A5FC;
+}
+
+/* Gray button --> Used for QR code on loggedin-home.html */
+.button-gray {
+    font-size: 15px;
+    padding: 5px 7px;
+    margin-left: 150px;
+    border-radius: 100px;
+    background-color: #C4C4C4;
+    text-decoration: none;
+    text-align: right;
+    height: auto;
+}
+
+#confirm-back-buttons {
+    position: fixed;
+    right: 150px; 
+    bottom: 100px;
+    float: right;
+}
+
+#confirm-button {
+    margin: 10px;
+    background-color: #79A5FC;
+}
+
+#back-button {
+    margin: 10px;
+    background-color: #9B9B9B;
+}
+
+.left-right-buttons {
+    width: 15px;
+}
+
+.popup-button {
+    background-color: #79A5FC;
+    font-size: 15px;
+    padding: 6px 20px;
+    border: none;
+}
+
+#popup-back-button {
+    margin: 10px;
+    background-color: #9B9B9B;
+    border: none;
+    float: right;
+}
+
+.popup-button:hover {
+    cursor: pointer;
+}

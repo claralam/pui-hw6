@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Carnegie Mellon University Tartan Testing">
+    
+    <title>CMU Tartan Testing</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/buttons.css" />
+
+    <!-- JS Files -->
+    <script src="js/main.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/scottyvaccinated.png" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="top_row">
+        <header>
+            <a href="loggedin-home.html"><img src="images/scottyvaccinated.png" class="logo" alt="CMU mascot Scotty wearing a mask"></a>
+            <h1>CMU Tartan Testing</h1>
+        </header>
+
+        <!-- Nav bar -->
+        <nav>
+            <a href="loggedin-home.html" class="button">HOME</a>
+            <a href="" class="button selected">SCHEDULE</a>
+            <a href="" class="button">RESULTS</a>
+            <a href="" class="button">CLARA</a>
+            <a href="index.html" class="button">LOGOUT</a>
+            <!-- <a href="profile.html" class="button"><img src="images/pfp.png" class="pfp">Clara</a> -->
+        </nav>
+
+        <div id="content">
+            <h2>Select Appointment Time</h2>
+            <!-- Left half of page -->
+            <div id="left-half">
+                <div id="calendar">
+                    <!-- Selecting a date -->
+                    <div id="date-selection">
+                        <img src="images/left_button.png" class="left-right-buttons" alt="left arrow">
+                        <p>February 2022</p>
+                        <img src="images/right_button.png" class="left-right-buttons" alt="right arrow">
+                        <form id="choose-appt-date" onclick="update_chosen_appt_date()">
+                            <input type="radio" id="date1" name="appt-date" value="Tuesday, February 1, 2022">
+                                <label for="date1">1<br><br>Tue</label>
+                            <input type="radio" id="date2" name="appt-date" value="Wednesday, February 2, 2022">
+                                <label for="date2">2<br><br>Wed</label>
+                            <input type="radio" id="date3" name="appt-date" value="Thursday, February 3, 2022">
+                                <label for="date3">3<br><br>Thu</label>
+                            <input type="radio" id="date4" name="appt-date" value="Friday, February 4, 2022">
+                                <label for="date4">4<br><br>Fri</label>
+                            <input type="radio" id="date5" name="appt-date" value="Saturday, February 5, 2022">
+                                <label for="date5">5<br><br>Sat</label>
+                            <input type="radio" id="date6" name="appt-date" value="Sunday, February 6, 2022">
+                                <label for="date6">6<br><br>Sun</label>
+                            <input type="radio" id="date7" name="appt-date" value="Monday, February 7, 2022">
+                                <label for="date7">7<br><br>Mon</label>
+                        </form>
+                    </div>
+                    <!-- Selecting a time -->
+                    <form id="choose-appt-time" onclick="update_chosen_appt_time()">
+                        <!-- Left side of times -->
+                        <div id="time-group1">
+                            <input type="radio" id="time1" name="appt-time" value="10:00 AM">
+                                <label for="time1">10:00 AM</label> <br>
+                            <input type="radio" id="time2" name="appt-time" value="10:05 AM">
+                                <label for="time2">10:05 AM</label> <br>
+                            <input type="radio" id="time3" name="appt-time" value="10:10 AM">
+                                <label for="time3">10:10 AM</label> <br>
+                            <input type="radio" id="time4" name="appt-time" value="10:15 AM">
+                                <label for="time5">10:15 AM</label> <br>
+                            <input type="radio" id="time5" name="appt-time" value="10:20 AM">
+                                <label for="time5">10:20 AM</label> <br>
+                            <input type="radio" id="time6" name="appt-time" value="10:25 AM">
+                                <label for="time6">10:25 AM</label> <br>
+                            <input type="radio" id="time7" name="appt-time" value="10:30 AM">
+                                <label for="time7">10:30 AM</label> <br>
+                        </div>
+                        <!-- Right side of times -->
+                        <div id="time-group2">
+                            <input type="radio" id="time8" name="appt-time" value="10:35AM">
+                                <label for="time8">10:35 AM</label> <br>
+                            <input type="radio" id="time9" name="appt-time" value="10:40AM">
+                                <label for="time9">10:40 AM</label> <br>
+                            <input type="radio" id="time10" name="appt-time" value="10:45AM">
+                                <label for="time10">10:45 AM</label> <br>
+                            <input type="radio" id="time11" name="appt-time" value="10:50AM">
+                                <label for="time11">10:50 AM</label> <br>
+                            <input type="radio" id="time12" name="appt-time" value="10:55AM">
+                                <label for="time12">10:55 AM</label> <br>
+                            <input type="radio" id="time13" name="appt-time" value="11:00AM">
+                                <label for="time13">11:00 AM</label> <br>
+                            <input type="radio" id="time14" name="appt-time" value="11:05AM">
+                                <label for="time14">11:05 AM</label> <br>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Right side of page -->
+            <div id="right-half">
+                <!-- Confirmation of selected choices -->
+                <p><strong>Appointment:</strong> <span class="appt-info-right">Tartan Testing (Asymptomatic COVID-19 Testing)</span></p><br>
+                <p><strong>Date:</strong> <span class="appt-info-right" id="appt-date">Tuesday, February 1, 2022</span></p><br>
+                <p><strong>Time:</strong> <span class="appt-info-right" id="appt-time">10:05 AM</span></p><br>
+                <p><strong>Location:</strong> <span class="appt-info-right">TCS Hall (Tata Consultancy Services</span></p><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.377367465818!2d-79.94954334903956!3d40.4447839617555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f319d3870ad1%3A0x79d45fd59091764a!2sTCS%20Hall!5e0!3m2!1sen!2sus!4v1646093544694!5m2!1sen!2sus" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Buttons -->
+            <div id="confirm-back-buttons">
+                <a href="confirm-appt.html" id="confirm-button" class="button">CONFIRM</a>
+                <a href="appt-type.html" id="back-button" class="button">BACK</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
