@@ -11,9 +11,9 @@
     <link rel="stylesheet" media="all" type="text/css" href="css/buttons.css" />
 
     <!-- JS Files -->
-    <script defer src="js/main.js"></script>
+    <script src="js/covid-results.js"></script>
+    <script defer src="js/modals.js"></script>
     
-
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/scottyvaccinated.png" />
 
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="onLoad()">
     <div id="top_row">
         <header>
             <a href="loggedin-home.html"><img src="images/scottyvaccinated.png" class="logo" alt="CMU mascot Scotty wearing a mask"></a>
@@ -48,7 +48,7 @@
                     <th>Date</th>
                     <th></th>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td><img class="checkmark" src="images/check.png" alt="checkmark"></td>
                     <td class="date-info">Wednesday, November 17, 2021</td>
                     <td class="button-col"><button data-modal-target="#modal" class="button popup-button">View</button></td>
@@ -71,6 +71,11 @@
                 <tr>
                     <td><img class="checkmark" src="images/check.png" alt="checkmark"></td>
                     <td class="date-info">Wednesday, May 12, 2021</td>
+                    <td class="button-col"><button data-modal-target="#modal" class="button popup-button">View</button></td>
+                </tr> -->
+                <tr>
+                    <td><img class="checkmark" src="images/check.png" alt="checkmark"></td>
+                    <td class="date-info">Wednesday, November 17, 2021</td>
                     <td class="button-col"><button data-modal-target="#modal" class="button popup-button">View</button></td>
                 </tr>
             </table>
