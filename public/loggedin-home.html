@@ -10,6 +10,9 @@
     <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" media="all" type="text/css" href="css/buttons.css" />
 
+    <!-- JS Files -->
+    <script src="js/upcoming-appt.js"></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/scottyvaccinated.png" />
 
@@ -19,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="onLoad()">
     <div id="top_row">
         <header>
             <a href="loggedin-home.html"><img src="images/scottyvaccinated.png" class="logo" alt="CMU mascot Scotty wearing a mask"></a>
@@ -41,17 +44,17 @@
             <div id="sidebar">
                 <h3>Upcoming Appointments</h3>
                 <table id="upcoming-summary">
-                    <tr>
+                    <!-- <tr>
                         <td>
                             <h4>COVID-19 Testing</h4>
-                            <p>Tuesday<br>
+                            <p>Tuesday,
                                February 1, 2022<br>
                                10:05 AM<br><br>
                                TCS Hall 
-                               <a href="" class="button-gray">QR Code</a>
+                               <button class="button button-gray">Cancel</button>
                             </p>
                         </td>
-                    </tr>
+                    </tr> -->
                 </table>
             </div>
 

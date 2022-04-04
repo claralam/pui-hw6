@@ -5,7 +5,7 @@ console.log(openModalButtons)
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
-console.log(typeof openModalButtons)
+// console.log(typeof openModalButtons)
 
 overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal.active')

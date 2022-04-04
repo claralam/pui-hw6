@@ -14,6 +14,8 @@
     <script defer src="js/main.js"></script>
     <script defer src="js/scheduling-appt.js"></script>
 
+    <script src="js/jquery-3.6.0.min.js"></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/scottyvaccinated.png" />
 
@@ -23,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="onLoadTimePage()">
     <div id="top_row">
         <header>
             <a href="loggedin-home.html"><img src="images/scottyvaccinated.png" class="logo" alt="CMU mascot Scotty wearing a mask"></a>
@@ -46,11 +48,11 @@
             <div id="left-half">
                 <div id="calendar">
                     <!-- Selecting a date -->
-                    <div id="date-selection">
-                        <img src="images/left_button.png" class="left-right-buttons" alt="left arrow">
-                        <p>February 2022</p>
-                        <img src="images/right_button.png" class="left-right-buttons" alt="right arrow">
-                        <form id="choose-appt-date" onclick="update_chosen_appt_date()">
+                    <form id="choose-appt-date" onclick="update_appt_info()">
+                        <div id="date-selection">
+                            <img src="images/left_button.png" class="left-right-buttons" alt="left arrow">
+                            <p>February 2022</p>
+                            <img src="images/right_button.png" class="left-right-buttons" alt="right arrow"><br>
                             <input type="radio" id="date1" name="appt-date" value="Tuesday, February 1, 2022" required>
                                 <label for="date1">1<br><br>Tue</label>
                             <input type="radio" id="date2" name="appt-date" value="Wednesday, February 2, 2022">
@@ -64,11 +66,9 @@
                             <input type="radio" id="date6" name="appt-date" value="Sunday, February 6, 2022">
                                 <label for="date6">6<br><br>Sun</label>
                             <input type="radio" id="date7" name="appt-date" value="Monday, February 7, 2022">
-                                <label for="date7">7<br><br>Mon</label>
-                        </form>
-                    </div>
-                    <!-- Selecting a time -->
-                    <form id="choose-appt-time" onclick="update_chosen_appt_time()">
+                                <label for="date7">7<br><br>Mon</label> 
+                        </div>
+
                         <!-- Left side of times -->
                         <div id="time-group1">
                             <input type="radio" id="time1" name="appt-time" value="10:00 AM" required>
@@ -116,9 +116,9 @@
             <!-- Right side of page -->
             <div id="right-half">
                 <!-- Confirmation of selected choices -->
-                <p><strong>Appointment:</strong> <span class="appt-info-right">Tartan Testing (Asymptomatic COVID-19 Testing)</span></p><br>
-                <p><strong>Date:</strong> <span class="appt-info-right" id="appt-date">Tuesday, February 1, 2022</span></p><br>
-                <p><strong>Time:</strong> <span class="appt-info-right" id="appt-time">10:05 AM</span></p><br>
+                <p><strong>Appointment:</strong> <span class="appt-info-right" id="appt-type"></span></p><br>
+                <p><strong>Date:</strong> <span class="appt-info-right" id="appt-date"></span></p><br>
+                <p><strong>Time:</strong> <span class="appt-info-right" id="appt-time"></span></p><br>
                 <p><strong>Location:</strong> <span class="appt-info-right">TCS Hall (Tata Consultancy Services</span></p><br>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.377367465818!2d-79.94954334903956!3d40.4447839617555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f319d3870ad1%3A0x79d45fd59091764a!2sTCS%20Hall!5e0!3m2!1sen!2sus!4v1646093544694!5m2!1sen!2sus" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
