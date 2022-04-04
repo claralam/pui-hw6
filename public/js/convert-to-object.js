@@ -11,6 +11,10 @@ confirmButton.onclick = event => {
     var apptDate = JSON.parse(localStorage.getItem("apptDate"));
     var apptTime = JSON.parse(localStorage.getItem("apptTime"));
 
+    if (apptType === "Tartan Testing (Asymptomatic COVID-19 Testing)") {
+        apptType = "Tartan Testing"
+    }
+
     var newAppt = new Appointment(apptType, apptDate, apptTime, "TCS Hall")
 
     var appointments = JSON.parse(localStorage.getItem("appts"));
