@@ -10,6 +10,9 @@
     <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" media="all" type="text/css" href="css/buttons.css" />
 
+    <!-- JS Files -->
+    <script defer src="js/scheduling-appt.js"></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/scottyvaccinated.png" />
 
@@ -41,17 +44,18 @@
             <h2>Schedule Appointment</h2>
             <h3>What would you like to book an appointment for?</h3>
             <form id="choose-appt-type">
-                <input type="radio" id="covid-test" name="appt-type" value="Tartan Testing (Asymptomatic COVID-19 Testing)">
+                <input type="radio" id="covid-test" name="appt-type" value="Tartan Testing (Asymptomatic COVID-19 Testing)" required>
                 <label for="covid-test">Tartan Testing (Asymptomatic COVID-19 Testing)</label> <br>
                 <input type="radio" id="vaccination" name="appt-type" value="COVID-19 Vaccination">
                 <label for="vaccination">COVID-19 Vaccination</label>
+
+                <!-- Buttons -->
+                <div id="confirm-back-buttons">
+                    <input type="submit" id="confirm-button" class="button" value="CONFIRM">
+                    <a href="loggedin-home.html" id="back-button" class="button">CANCEL</a>
+                </div>
             </form>
 
-            <!-- Buttons -->
-            <div id="confirm-back-buttons">
-                <a href="appt-time.html" id="confirm-button" class="button">CONFIRM</a>
-                <a href="loggedin-home.html" id="back-button" class="button">CANCEL</a>
-            </div>
         </div>
     </div>
 </body>

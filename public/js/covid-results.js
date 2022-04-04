@@ -18,26 +18,36 @@ var nov17_21 = new Result("Wednesday", "November", 17, 2021, "2:30 PM", "East Ca
 
 
 const past_results = [may12_21, aug26_21, sep16_21, oct14_21, nov17_21]
-
+// const past_results = []
 
 function onLoad() {
-    past_results.forEach(item => {
-        // Get table by ID
-        var resultsTable = document.getElementById("covid-results");
+    // Get table by ID
+    var resultsTable = document.getElementById("covid-results");
+    
+    // If there are currently no result history
+    if (past_results.length == 0) {
+        var noResultsNotice = document.createElement("h3")
+        noResultsNotice.innerHTML = "You currently have no COVID-19 test history."
+        resultsTable.parentNode.insertBefore(noResultsNotice, resultsTable)
+        resultsTable.parentNode.removeChild(resultsTable);
+    } 
+    // If there are results
+    else {
+        past_results.forEach(item => {
+            // Add new row at the top of the table, under the headings
+            var row =  resultsTable.insertRow(1);
 
-        // Add new row at the top of the table, under the headings
-        var row =  resultsTable.insertRow(1);
+            // Add new cols for the row
+            var col1 = row.insertCell(0);
+            var col2 = row.insertCell(1);
+            var col3 = row.insertCell(2);
 
-        // Add new cols for the row
-        var col1 = row.insertCell(0);
-        var col2 = row.insertCell(1);
-        var col3 = row.insertCell(2);
-
-        // Add into the cols of the rows
-        col1.innerHTML = '<img class="checkmark" src="images/check.png" alt="checkmark">' //checkmark
-        col2.className = "date-info"
-        col2.innerHTML = `${item.dow}, ${item.month} ${item.date}, ${item.year}`
-        col3.className = "button-col"
-        col3.innerHTML = '<button data-modal-target="#modal" class="button popup-button" onclick="openModal(modal, this)">View</button>'
-    })
+            // Add into the cols of the rows
+            col1.innerHTML = '<img class="checkmark" src="images/check.png" alt="checkmark">' //checkmark
+            col2.className = "date-info"
+            col2.innerHTML = `${item.dow}, ${item.month} ${item.date}, ${item.year}`
+            col3.className = "button-col"
+            col3.innerHTML = '<button data-modal-target="#modal" class="button popup-button" onclick="openModal(modal, this)">View</button>'
+        })
+    }
   }
