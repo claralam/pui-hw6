@@ -5,6 +5,8 @@ Clara Lam
 
 Screen Resolution: 3840 x 2160
 
+NOTE: To get to the features, press the CMU Scotty Tartan Testing Logo on the top left. Currently, if you try to go through the log in screen, Chrome marks the website as "deceptive", saying that it detected phishing.
+
 JavaScript Features
 
 1. Home Page: Access the logged-in home screen by going to the log-in screen and logging in.
