@@ -18,5 +18,7 @@ Extra Features <br />
 1. Interesting & Useful JavaScript:
     - Added a modal/popup in the View COVID-19 Test Results page when you click "view"
 
+The reflection is in the write-up folder.
+
 Icons used: <br />
 https://www.flaticon.com/free-icons/check Icons created by Maxim Basinski Premium
