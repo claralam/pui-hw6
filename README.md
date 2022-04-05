@@ -14,5 +14,9 @@ JavaScript Features
     - Schedule an Appointment: You may schedule an appointment and once you are done, the appointment is saved by localStorage and will show up in upcoming appointments on the logged-in home page. On the page where the user selects an appointment time, the right side of the page will also update in real-time with the option that the user choose on the right.
     - View COVID-19 Test Results: You can view your previous COVID-19 Test Results. A modal appears when you click "View". 
 
+Extra Features <br />
+1. Interesting & Useful JavaScript:
+    - Added a modal/popup in the View COVID-19 Test Results page when you click "view"
+
 Icons used: <br />
 https://www.flaticon.com/free-icons/check Icons created by Maxim Basinski Premium
