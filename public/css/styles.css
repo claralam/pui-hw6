@@ -153,16 +153,16 @@ h3 {
 
 /* Selecting Appt Type */
 
-#choose-appt-type input[type="radio"] {
+#date-selection input[type="radio"] {
     margin: 20px 15px;
     transform: scale(1.75); 
 }
 
-#choose-appt-type label {
+#date-selection label {
     font-size: 20px;
 }
 
-/* Selecting Appt Date &Time */
+/* Selecting Appt Date & Time */
 
 #left-half {
     width: 40%;
@@ -178,6 +178,7 @@ h3 {
     padding: 5px;
     line-height: 0.8em;
     border-radius: 20px;
+    width: 70%;
 }
 
 #date-selection img, #date-selection p {
@@ -187,23 +188,18 @@ h3 {
     font-size: 1.25em;
 }
 
-#choose-appt-date {
+#date-selection {
     margin: 10px;
-    width: 150%
-  }
-  
-#choose-appt-date input[type="radio"] {
-    opacity: 0;
-    width: 0;
+    width: 100%
 }
 
-#choose-appt-date label {
+#date-selection label {
     position: relative;
-    left: -165px;
+    left: -25px;
     display: inline-block;
     background-color: #ddd;
     padding: 10px;
-    margin: 0px 10px;
+    margin: 0px 0px;
     text-align: center;
     line-height: 1em;
     border-radius: 50%;
@@ -211,20 +207,22 @@ h3 {
     width: 20px;
 }
 
-#choose-appt-date label:hover {
+#date-selection label:hover {
     border: 2px solid #79A5FC;
 }
 
-#choose-appt-date input[type="radio"]:checked + label {
+#date-selection input[type="radio"]:checked + label {
     background-color: #79A5FC;
 }
 
-#choose-appt-time {
+#date-selection input[name="appt-date"]{
+    opacity: 0;
+    width: 0;
     position: relative;
     display: inline-block;
 }
 
-#choose-appt-time input[type="radio"] {
+input[type="radio"] {
     margin: 20px 15px;
     transform: scale(1.5);
 }
@@ -236,7 +234,7 @@ h3 {
 
 #time-group2 {
     margin-left: 225px;
-    float: right;
+    float: left;
 }
 
 #right-half {

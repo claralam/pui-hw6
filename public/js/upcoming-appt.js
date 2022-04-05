@@ -50,33 +50,25 @@ function onLoad() {
     }
 }
 
-// Cancel button
-const cancelButtons = document.getElementsByClassName('cancel-button')
-console.log(cancelButtons);
-
-// cancelButtons.forEach(button => {
-//     console.log(button);
-//     button.addEvenListener('click', () => {
-//         const appt = button.closest('tr')
-//         console.log(appt);
-//         deleteAppt(appt);
-//     })
-// })
+// Cancelling appointment
 
 function deleteAppt(appt) {
     var appointments = JSON.parse(localStorage.getItem("appts"));
     var id = appt.id;
     // console.log("id", id);
+    var confirmation = confirm("Are you sure you want to cancel this appointment?");
 
-    if (appointments.length == 1) {
-        localStorage.clear()
-    } else {
-        appointments = appointments.splice(1, id);
-        console.log(appointments);
-        localStorage.setItem("appts", JSON.stringify(appointments));
+    if (confirmation) {
+        if (appointments.length == 1) {
+            localStorage.clear()
+        } else {
+            appointments = appointments.splice(1, id);
+            console.log(appointments);
+            localStorage.setItem("appts", JSON.stringify(appointments));
+        }
+        
+        // localStorage.clear();
+        console.log(JSON.parse(localStorage.getItem("appts")))
+        window.location.reload();
     }
-    
-    // localStorage.clear();
-    console.log(JSON.parse(localStorage.getItem("appts")))
-    window.location.reload();
 }
